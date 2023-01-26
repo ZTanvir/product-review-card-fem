@@ -26,3 +26,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.card .card-content {
+  padding: 20px;
+}
+.card-content article {
+  margin: 14px 0px;
+  font-size: 14px;
+}
+.card-content .product-price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card-content .discount-price {
+  color: var(--dark-cyan);
+}
+.card-content .fixed-price {
+  text-decoration: line-through;
+}
