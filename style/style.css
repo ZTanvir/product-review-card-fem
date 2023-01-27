@@ -32,6 +32,8 @@ body {
   background-image: url(../images/image-product-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .card .card-content {
   padding: 20px;
@@ -71,15 +73,16 @@ body {
 }
 .buy-now {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 15px 30px;
-  border: none;
-  background-color: var(--dark-cyan);
   gap: 10px;
-  border-radius: 5px;
   color: var(--white);
+  background-color: var(--dark-cyan);
+  width: 100%;
+  border: none;
+  border-radius: 5px;
   font-size: 16px;
   font-weight: 700;
+  margin-bottom: 16px;
+  padding: 15px 30px;
 }
