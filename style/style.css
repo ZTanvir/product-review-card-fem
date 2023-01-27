@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,700&family=Montserrat:wght@300;500;700&display=swap");
 :root {
   --dark-cyan: hsl(158, 36%, 37%);
   --cream: hsl(30, 38%, 92%);
@@ -18,15 +17,16 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fraunces", serif;
-  font-family: "Montserrat", sans-serif;
 }
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 500px;
+  width: 550px;
   background-color: var(--white);
   border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  background-color: var(--white);
 }
 .card .card-img {
   background-image: url(../images/image-product-desktop.jpg);
@@ -36,19 +36,38 @@ body {
 .card .card-content {
   padding: 20px;
 }
+.card .card-content .card-type {
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+.card .card-content h2 {
+  font-family: "Fraunces", serif;
+}
+.card .card-content .next-line::before {
+  content: "\A";
+  white-space: pre;
+}
 .card-content article {
   margin: 14px 0px;
   font-size: 14px;
+  font-weight: 300;
 }
 .card-content .product-price {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  place-items: center;
+  font-family: "Fraunces", serif;
 }
 .card-content .discount-price {
   color: var(--dark-cyan);
+  font-size: 30px;
+  margin: 16px 0px;
+  font-weight: 700;
 }
 .card-content .fixed-price {
   text-decoration: line-through;
+  font-weight: 300;
+  font-size: 14px;
 }
 .buy-now {
   display: flex;
@@ -59,4 +78,8 @@ body {
   border: none;
   background-color: var(--dark-cyan);
   gap: 10px;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
 }
