@@ -21,7 +21,7 @@ body {
 }
 .card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   width: 550px;
   background-color: var(--white);
   border-radius: 5px;
