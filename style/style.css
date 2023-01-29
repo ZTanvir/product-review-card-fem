@@ -92,3 +92,21 @@ body {
   background-color: hsl(157, 76%, 10%);
   cursor: pointer;
 }
+/* Mobile design */
+@media only screen and (max-width: 375px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    margin: 10px;
+  }
+  .card .card-img {
+    background-image: url(../images/image-product-mobile.jpg);
+    background-size: cover;
+  }
+  .card .card-content .next-line::before {
+    content: "";
+  }
+  .card-content .product-price .fixed-price {
+    justify-self: start;
+  }
+}
