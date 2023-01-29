@@ -98,6 +98,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
     margin: 10px;
+    border-radius: 10px;
   }
   .card .card-img {
     background-image: url(../images/image-product-mobile.jpg);
@@ -108,5 +109,10 @@ body {
   }
   .card-content .product-price .fixed-price {
     justify-self: start;
+  }
+  .card .card-img {
+    border-radius: unset;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }
