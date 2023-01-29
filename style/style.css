@@ -24,7 +24,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   width: 550px;
   background-color: var(--white);
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   background-color: var(--white);
@@ -33,8 +33,8 @@ body {
   background-image: url(../images/image-product-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .card .card-content {
   padding: 20px;
@@ -114,5 +114,8 @@ body {
     border-radius: unset;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+  }
+  .buy-now {
+    margin-bottom: 0;
   }
 }
